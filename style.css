@@ -80,10 +80,14 @@ html {
     height: auto;
     margin-top: 0;
   }
-  .logo img {
-    height: 60px;
+  .navbar .logo img {
+    height: 50px;
     width: auto;
-    max-width: 200px;
+    max-width: 170px;
+    object-fit: contain;
+  }
+  .navbar .logo .logo-text {
+    font-size: 0.9rem;
   }
 }
 
@@ -126,10 +130,23 @@ html {
 .navbar .logo {
   font-weight: 700;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.logo img {
-  height: 70px;
+.navbar .logo img {
+  height: 56px;
   width: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+.navbar .logo .logo-text {
+  color: #298ee1;
+  font-weight: 450;
+  font-size: 1.05rem;
+  line-height: 1;
+
+  white-space: nowrap;
 }
 .navbar nav a {
   margin: 0 15px;
