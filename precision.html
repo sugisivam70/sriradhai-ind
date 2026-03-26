@@ -1192,5 +1192,30 @@
         });
       });
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.__precisionMobileNavInit) return;
+        window.__precisionMobileNavInit = true;
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (!menuToggle || !navLinks) return;
+
+        menuToggle.addEventListener("click", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+          if (
+            !menuToggle.contains(event.target) &&
+            !navLinks.contains(event.target)
+          ) {
+            navLinks.classList.remove("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
