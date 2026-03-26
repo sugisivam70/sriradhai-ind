@@ -834,7 +834,7 @@
             entries.forEach(function (entry) {
               if (entry.isIntersecting) {
                 const index = cards.indexOf(entry.target);
-                const revealDelay = Math.max(index, 0) * 2000;
+                const revealDelay = Math.max(index, 0) * 1000;
                 setTimeout(function () {
                   entry.target.classList.add("is-visible");
                 }, revealDelay);
