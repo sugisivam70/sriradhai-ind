@@ -36,7 +36,8 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 65%;
+  right: 0;
+  width: min(1160px, 92%);
   z-index: 1000;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -47,7 +48,8 @@ html {
   box-shadow: 0 1px 0 rgba(12, 36, 41, 0.08);
   font-family: "Poppins", sans-serif;
   border-radius: 100px;
-  margin-top: 7px;
+  margin: 7px auto 0;
+  
 }
 
 .navbar .logo {
