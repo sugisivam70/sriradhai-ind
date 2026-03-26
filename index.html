@@ -45,7 +45,6 @@
         <a href="machines.html">Machine's</a>
         <div class="nav-dropdown">
           <a href="contact.html" class="dropdown-toggle">Contact</a>
-         
         </div>
 
         <a
@@ -62,7 +61,7 @@
     <section class="hero">
       <img
         class="bgimg"
-        src="img/logo/Production process using robots and computers at smart factory.jpg"
+        src="img/hero-slide/27613.jpg"
         alt="Sri Radhai Industries VMC Machining Facility"
       />
 
@@ -77,7 +76,10 @@
 
         <!-- VMC Image -->
         <div class="hero-image">
-          <img src="img/dm-vmc-machine.jpg" alt="Sri Radhai Industries VMC Machine" />
+          <img
+            src="img/hero-slide/27613.jpg"
+            alt="Sri Radhai Industries VMC Machine"
+          />
 
           <div class="badge nx">
             Sri Radhai Engineering<br />
@@ -182,25 +184,33 @@
           <div class="abtfeature-box">
             <div class="number">01.</div>
             <h3>Engineering Expertise</h3>
-            <p>Experienced team with strong process and production understanding.</p>
+            <p>
+              Experienced team with strong process and production understanding.
+            </p>
           </div>
 
           <div class="abtfeature-box">
             <div class="number">02.</div>
             <h3>Advanced Infrastructure</h3>
-            <p>Well-maintained machining setup for stable and efficient output.</p>
+            <p>
+              Well-maintained machining setup for stable and efficient output.
+            </p>
           </div>
 
           <div class="abtfeature-box">
             <div class="number">03.</div>
             <h3>Quality Assurance</h3>
-            <p>Stage-wise inspection to maintain dimensional and process quality.</p>
+            <p>
+              Stage-wise inspection to maintain dimensional and process quality.
+            </p>
           </div>
 
           <div class="abtfeature-box">
             <div class="number">04.</div>
             <h3>On-Time Commitment</h3>
-            <p>Planned production and dispatch aligned with customer timelines.</p>
+            <p>
+              Planned production and dispatch aligned with customer timelines.
+            </p>
           </div>
         </div>
       </div>
@@ -661,9 +671,7 @@
           </p>
 
           <p>
-            <a href="#">
-              <i class="fas fa-fax"></i> Fax: 091-080-23325218
-            </a>
+            <a href="#"> <i class="fas fa-fax"></i> Fax: 091-080-23325218 </a>
           </p>
 
           <p>
@@ -740,7 +748,7 @@
             title: "<span>Industrial</span> Solutions",
             tagline:
               "Custom manufacturing support aligned to drawings and delivery plans.",
-            image: "img/38196.jpg",
+            image: "img/19820.jpg",
             badgeNx:
               'Custom Solutions<br><small>Reliable & Cost-Effective</small><br><a href="contact.html">Contact Us</a>',
             badgeSun: "RELIABLE<br><small>On-Time Delivery</small>",
@@ -775,6 +783,7 @@
           heroContent.classList.remove("anim-in");
           heroContent.classList.add("anim-out");
 
+          // Change slide during fade-out for seamless transition
           setTimeout(() => {
             index = (index + 1) % slides.length;
             applySlide(index);
@@ -782,12 +791,8 @@
             heroContent.classList.remove("anim-out");
             void heroContent.offsetWidth; // force reflow
             heroContent.classList.add("anim-in");
-
-            setTimeout(
-              () => heroContent.classList.remove("anim-in"),
-              ANIM_DURATION,
-            );
-          }, ANIM_DURATION);
+            // Keep anim-in class - don't remove it until next cycle
+          }, ANIM_DURATION / 2);
         }, SLIDE_INTERVAL);
       })();
 
@@ -905,5 +910,3 @@
     </script>
   </body>
 </html>
-
-
