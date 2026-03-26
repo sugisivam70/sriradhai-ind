@@ -24,137 +24,157 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <style>
+      html.lenis,
+      html.lenis body {
+        height: auto;
+      }
+
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+
+      .lenis.lenis-scrolling iframe {
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <header class="navbar">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img
           src="img/logo/logo-removebg-preview.png"
           alt="Sri Radhai Industries Logo"
         />
-        <span class="logo-text">Sri radhai industries</span>
-      </div>
+        <span class="logo-text">Sri Radhai Industries</span>
+      </a>
       <button class="menu-toggle" aria-label="Toggle menu">
         <i class="fas fa-bars"></i>
       </button>
       <nav class="nav-links">
-        <a href="index.html">About</a>
         <a href="services.html">Services</a>
         <a href="precision.html">Precision</a>
-        <a href="machines.html">Machine's</a>
-        <div class="nav-dropdown">
-          <a href="contact.html" class="dropdown-toggle">Contact</a>
-        </div>
+        <a href="machines.html">Machines</a>
+        <a href="contact.html">Contact</a>
 
+        
         <a
           href="https://wa.me/919845380170?text=Hi%20Sri%20Radhai%20Industries,%20I%20would%20like%20to%20enquire%20about%20your%20industrial%20components%20and%20sheet%20metal%20services."
           target="_blank"
           rel="noopener"
           class="btn-yellow"
-          >Enquiry ➜</a
+          >Enquiry</a
         >
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <img
-        class="bgimg"
-        src="img/hero-slide/27613.jpg"
-        alt="Sri Radhai Industries VMC Machining Facility"
-      />
+    <section class="hero-new">
+      <div class="hero-container">
+        <div class="hero-content-center">
+          <h1 class="hero-title">
+            Precision Engineering with
+            <span class="highlight">Latest Manufacturing</span> Technology
+          </h1>
+          <p class="hero-subtitle">
+            Expert precision machining to elevate your manufacturing. Let's take
+            your business further.
+          </p>
 
-      <div class="hero-content">
-        <div class="hero-left">
-          <h1><span>Sri Radhai</span> Industries</h1>
-          <div class="tagline">
-            End-to-end precision machining and CNC job work solutions built for
-            quality, reliability, and on-time delivery.
+          <div class="hero-buttons">
+            <a href="services.html" class="btn-primary">Get Started</a>
+            <a href="precision.html" class="btn-secondary">View Capabilities</a>
+          </div>
+
+          <div class="hero-rating">
+            <div class="stars-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="rating-score">5.0</span>
+            </div>
+            <p class="rating-text">from 80+ <span>reviews</span></p>
           </div>
         </div>
 
-        <!-- VMC Image -->
-        <div class="hero-image">
-          <img
-            src="img/hero-slide/27613.jpg"
-            alt="Sri Radhai Industries VMC Machine"
-          />
-
-          <div class="badge nx">
-            Sri Radhai Engineering<br />
-            <small>Trusted Industrial Manufacturing Partner</small><br />
-            <a href="#about">Know More</a>
+        <div class="hero-stats">
+          <div class="stat-card stat-primary" data-target="100">
+            <div class="stat-number" data-number="100">0</div>
+            <div class="stat-label">
+              Our Esteemed<br />Clients and<br />Partners
+            </div>
           </div>
 
-          <div class="badge sun">
-            PRECISION<br />
-            <small>±0.005 mm</small>
+          <div class="stat-card stat-secondary" data-target="1951">
+            <div class="stat-number" data-number="1951">0</div>
+            <div class="stat-label">
+              Total Projects<br /><small>Increase of 126 this month</small>
+            </div>
+          </div>
+
+          <div class="stat-card stat-highlight" data-target="6">
+            <div class="stat-number" data-number="6">0</div>
+            <div class="stat-label">Years of<br />Dedicated<br />Service</div>
+          </div>
+
+          <div class="stat-card stat-dark">
+            <i class="fas fa-tachometer-alt"></i>
+            <div class="stat-label">
+              Achieve Optimal<br />Efficiency and Boost<br />Productivity
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Feature Cards -->
-      <div class="herofeatures">
-        <div class="herofeature-card review">
-          <p>ISO 9001:2015</p>
-          <div class="stars">Certified Quality</div>
-          <a href="machines.html">Quality Policy</a>
-        </div>
-
-        <div class="herofeature-card battery">
-          <p>High-Speed Machining</p>
-          <img
-            src="img/abt/360_F_500918189_xsBOBFpzqSekBwrIQf2e2A7jwwS5Ntqh.jpg"
-            alt="High-Speed VMC Spindle"
-          />
-        </div>
-
-        <div class="herofeature-card battery">
-          <p>Consistent Reliability</p>
-          <small>Planned production with tight tolerance control</small>
-          <img
-            src="img/abt/banner-guide-to-the-components-of-a-cnc-machine.jpg"
-            alt="Precision Machining Process"
-          />
-        </div>
-
-        <div class="herofeature-card battery">
-          <p>Automation Ready</p>
-          <small>ATC-compatible for efficient production</small>
-          <img src="img/abt/CNC-Machine.jpg" alt="CNC Automation Setup" />
+        <div class="hero-decorations">
+          <div class="deco-icon deco-1"><i class="fas fa-gear"></i></div>
+          <div class="deco-icon deco-2"><i class="fas fa-chart-line"></i></div>
+          <div class="deco-icon deco-3"><i class="fas fa-cube"></i></div>
+          <div class="deco-icon deco-4"><i class="fas fa-sliders-h"></i></div>
         </div>
       </div>
     </section>
 
     <section class="about-section" id="about">
-      <h1 class="about-animated-text">
-        <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
-        <span>&nbsp;</span>
-      </h1>
-
-      <div class="intro">
-        <p>
-          <strong>Sri Radhai Industries</strong> is a customer-focused
-          <strong>precision engineering and CNC machining company</strong>
-          delivering dependable manufacturing support for industrial clients.
-          From drawing review to final dispatch, we ensure quality execution,
-          clear communication, and consistent delivery performance.
-        </p>
-        <a href="contact.html"
-          ><button class="cta-button">Talk to Us ↗</button></a
-        >
+      <div class="about-header">
+        <p class="about-eyebrow">About Sri Radhai Industries</p>
+        <h2 class="about-heading">
+          Precision engineering support built for dependable manufacturing,
+          measured quality, and on-time supply.
+        </h2>
       </div>
 
-      <div class="about-images">
-        <img
-          src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_faa76de1.jpg"
-          alt="Sri Radhai Industries Machining Team"
-        />
-        <img
-          src="img/abt/WhatsApp Image 2025-09-24 at 13.16.33_42b42982.jpg"
-          alt="Precision Machined Components"
-        />
+      <div class="about-intro-grid">
+        <div class="intro">
+          <p>
+            <strong>Sri Radhai Industries</strong> is a customer-focused
+            <strong>precision engineering and CNC machining company</strong>
+            delivering dependable manufacturing support for industrial clients.
+            From drawing review to final dispatch, we ensure disciplined
+            execution, responsive communication, and consistent delivery
+            performance.
+          </p>
+          <div class="about-actions">
+            <a href="contact.html" class="cta-button">Talk to Us</a>
+          </div>
+        </div>
+
+        <div class="about-images">
+          <img
+            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_faa76de1.jpg"
+            alt="Sri Radhai Industries machining team"
+          />
+          <img
+            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.33_42b42982.jpg"
+            alt="Precision machined components"
+          />
+        </div>
       </div>
 
       <div class="philosophy">
@@ -217,183 +237,125 @@
     </section>
 
     <!-- Trusted Clients -->
-    <section class="trusted">
-      <p class="trusted-title">Trusted by Global Manufacturers</p>
-      <div class="logos-slider">
-        <div class="logos-track">
-          <!-- Repeat logos twice for seamless loop -->
-          <img src="img/slider/advertising_agency_04.jpg" alt="Client 1" />
-          <img
-            src="img/slider/2011.i402.055..electricity and lighting flat icons-02.jpg"
-            alt="Client 2"
-          />
-          <img src="img/slider/2368498.jpg" alt="Client 3" />
-          <img src="img/slider/6166856.jpg" alt="Client 4" />
-          <img
-            src="img/slider/Production process using robots and computers at smart factory.jpg"
-            alt="Client 5"
-          />
-
-          <!-- Duplicates -->
-          <img src="img/slider/9859.jpg" alt="Client 1" />
-          <img
-            src="img/slider/2011.i402.055..electricity and lighting flat icons-02.jpg"
-            alt="Client 2"
-          />
-          <img src="img/slider/2368498.jpg" alt="Client 3" />
-          <img src="img/slider/6166856.jpg" alt="Client 4" />
-          <img
-            src="img/slider/Production process using robots and computers at smart factory.jpg"
-            alt="Client 5"
-          />
-          <img src="img/slider/advertising_agency_04.jpg" alt="Client 1" />
-          <img
-            src="img/slider/2011.i402.055..electricity and lighting flat icons-02.jpg"
-            alt="Client 2"
-          />
-          <img src="img/slider/2368498.jpg" alt="Client 3" />
-          <img src="img/slider/6166856.jpg" alt="Client 4" />
-          <img
-            src="img/slider/Production process using robots and computers at smart factory.jpg"
-            alt="Client 5"
-          />
-
-          <!-- Duplicates -->
-          <img src="img/slider/9859.jpg" alt="Client 1" />
-          <img
-            src="img/slider/2011.i402.055..electricity and lighting flat icons-02.jpg"
-            alt="Client 2"
-          />
-          <img src="img/slider/2368498.jpg" alt="Client 3" />
-          <img src="img/slider/6166856.jpg" alt="Client 4" />
-          <img
-            src="img/slider/Production process using robots and computers at smart factory.jpg"
-            alt="Client 5"
-          />
-        </div>
-      </div>
-    </section>
+    
     <section class="process-section" id="process">
       <div class="process-container">
-        <h5 class="sub-heading">Sri Radhai Process</h5>
-        <h2 class="main-heading">How We Work</h2>
+        <h5 class="sub-heading">Sri Radhai Industries</h5>
+        <h2 class="main-heading">Our Industrial Capabilities</h2>
         <p class="process-intro">
-          Our workflow is built to deliver precision industrial components and
-          sheet metal parts with consistent quality and on-time supply.
+          Precision manufacturing support built around fabrication, scalable
+          supply, and dependable inspection standards.
         </p>
 
-        <div class="timeline">
-          <div class="timeline-block-left">
-            <div class="timeline-content">
-              <span class="step-number">01.</span>
-              <h3>Requirement & Drawing Review</h3>
-              <p>
-                We understand part requirements, drawings, tolerances, and
-                application details before production starts.
-              </p>
-            </div>
-            <div class="timeline-img">
+        <div class="capabilities-grid">
+          <article class="capability-card">
+            <h3>Steel & Metal Manufacturing</h3>
+            <p>
+              High-strength materials engineered for durability, consistency,
+              and industrial performance.
+            </p>
+            <div class="capability-image">
               <img
-                src="img/process/business-training-night-planning-employees-talking-about-corporate-proposal-internet-dark-office-night-african-workers-working-partnership-web-with-computer-overtime_590464-87124.jpg"
-                alt="Requirement and Drawing Review"
+                src="img/abt/automotive-parts-manufacturing-canada-with-precision-engineering-processes_1291600-47172.jpg"
+                alt="Steel and metal manufacturing"
               />
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-block">
-            <div class="timeline-content">
-              <span class="step-number">02.</span>
-              <h3>Material & Process Planning</h3>
-              <p>
-                We define material flow, tooling, operations, and timelines to
-                ensure stable and efficient execution.
-              </p>
-            </div>
-            <div class="timeline-img">
-              <img
-                src="img/process/images.jpeg.jpg"
-                alt="Material and Process Planning"
-              />
-            </div>
-          </div>
-
-          <div class="timeline-block-left">
-            <div class="timeline-content">
-              <span class="step-number">03.</span>
-              <h3>Manufacturing & Fabrication</h3>
-              <p>
-                Components are produced through precision machining and sheet
-                metal fabrication with in-process quality monitoring.
-              </p>
-            </div>
-            <div class="timeline-img">
+          <article class="capability-card">
+            <div class="capability-image">
               <img
                 src="img/process/factory-worker-operating-industrial-machine_342744-82.jpg"
-                alt="Manufacturing and Fabrication"
+                alt="Custom industrial fabrication"
               />
             </div>
-          </div>
+            <h3>Custom Industrial Fabrication</h3>
+            <p>
+              Tailored fabrication solutions developed around project-specific
+              drawings and production needs.
+            </p>
+          </article>
 
-          <div class="timeline-block">
-            <div class="timeline-content">
-              <span class="step-number">04.</span>
-              <h3>Final Inspection & Dispatch</h3>
-              <p>
-                Each batch is checked against drawing requirements and then
-                packed and dispatched as per committed schedules.
-              </p>
+          <article class="capability-card">
+            <h3>Mass Production & Supply</h3>
+            <p>
+              Scalable production capacity with stable process control and
+              dependable quality output.
+            </p>
+            <div class="capability-image">
+              <img
+                src="img/hero-slide/vertical-shot-spanish-caucasian-man-wearing-facemask-working-warehouse.jpg"
+                alt="Mass production and supply"
+              />
             </div>
-            <div class="timeline-img">
+          </article>
+
+          <article class="capability-card">
+            <div class="capability-image">
               <img
                 src="img/process/flat-illustration-businessman-check-product-260nw-2539345811.webp"
-                alt="Final Inspection and Dispatch"
+                alt="Quality testing and compliance"
               />
             </div>
-          </div>
+            <h3>Quality Testing & Compliance</h3>
+            <p>
+              Strict inspection practices that support drawing conformity and
+              customer quality expectations.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="expertise">
       <div class="expert-container">
-        <h2 class="section-title">Our <span>Expertise</span></h2>
+        <div class="expertise-header">
+          <p class="expertise-eyebrow">Core Expertise</p>
+          <h2 class="expertise-heading">
+            Precision manufacturing capabilities tailored for industrial
+            production reliability.
+          </h2>
+        </div>
 
         <div class="expertise-grid">
-          <div class="expert-box">
+          <article class="expert-box">
             <img
               src="img/our-expertice/factory-worker-who-made-necessary-coding-cnc-modern-machine_1208970-66662.jpg"
               alt="Process Planning"
             />
+            <p class="expert-kicker">01 • Process Engineering</p>
             <h4>Process Planning</h4>
             <p>
               Review of drawings, specifications, and material requirements to
               plan accurate machining processes.
             </p>
-          </div>
+          </article>
 
-          <div class="expert-box">
+          <article class="expert-box">
             <img
               src="img/our-expertice/industrial-engineers-working-control-room-factory-performing-maintenance-machinery_1158146-28277.jpg"
               alt="VMC CNC Machining"
             />
+            <p class="expert-kicker">02 • Production Capability</p>
             <h4>VMC & CNC Machining</h4>
             <p>
               Precision machining using modern VMC and CNC machines for
               consistent quality and repeatability.
             </p>
-          </div>
+          </article>
 
-          <div class="expert-box">
+          <article class="expert-box">
             <img
               src="img/our-expertice/factory-worker-operating-industrial-machine-setting-parameters-computer_342744-133.jpg"
               alt="Inspection and Delivery"
             />
+            <p class="expert-kicker">03 • Quality & Dispatch</p>
             <h4>Inspection & Delivery</h4>
             <p>
               Components inspected as per drawings and delivered on time with
               clear communication.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -401,32 +363,48 @@
     <section class="cnc-awareness-section">
       <div class="awareness-container">
         <div class="awareness-text">
+          <p class="awareness-eyebrow">CNC Machining Support</p>
           <h2>
-            Clear understanding of
-            <span class="highlight">precision machining capabilities</span>
-            builds confidence and long-term partnerships
+            Reliable
+            <span class="highlight">precision machining capability</span>
+            for OEMs, production buyers, and engineering teams.
           </h2>
 
           <p>
-            A reliable CNC and VMC machining partner helps OEMs and engineering
-            industries achieve consistent quality, accuracy, and dependable
-            production support.
+            We support customers with disciplined CNC and VMC machining
+            processes, practical production planning, and inspection-driven
+            execution that helps maintain quality and delivery confidence.
           </p>
+
+          <div class="awareness-points">
+            <div class="awareness-point">
+              <strong>Consistent machining quality</strong>
+              <span>Controlled processes aligned with drawing and tolerance needs.</span>
+            </div>
+            <div class="awareness-point">
+              <strong>Production-ready support</strong>
+              <span>Responsive execution for repeat batches and ongoing supply requirements.</span>
+            </div>
+            <div class="awareness-point">
+              <strong>Inspection-focused delivery</strong>
+              <span>Stage-wise checks that help reduce variation and build trust.</span>
+            </div>
+          </div>
 
           <a
             href="https://wa.me/918296223386?text=Hi%20Sri%20Radhai%20Industries,%20I%20am%20interested%20in%20your%20VMC%20and%20CNC%20machining%20services."
             class="btn-primary"
           >
-            Contact Us
+            Discuss Your Requirement
           </a>
         </div>
 
         <div class="awareness-image">
-          <img src="img/38196.jpg" alt="VMC CNC Machines" />
+          <img src="img/hero-slide/1809.sm002.010.TS.m000.c5.industry factory flat.jpg" alt="VMC CNC Machines" />
 
           <div class="counter-box">
-            <i class="fas fa-cube"></i>
-            <span><strong>Precision</strong> Machining Partner</span>
+            <i class="fas fa-shield-alt"></i>
+            <span><strong>Quality-led</strong> machining partner</span>
           </div>
         </div>
       </div>
@@ -468,11 +446,15 @@
     </section>
 
     <section class="testimonial-section">
-      <p class="section-label">Testimonials</p>
-      <h2 class="section-title">
-        What <span class="highlight-blue">Our Clients</span> Say
-        <span class="highlight-blue">About Us</span>
+      <p class="testimonial-eyebrow">Client Testimonials</p>
+      <h2 class="testimonial-title">
+        Trusted feedback from our
+        <span class="highlight-blue">manufacturing partners</span>
       </h2>
+      <p class="testimonial-intro">
+        Consistent quality, reliable delivery, and practical technical support
+        are the reasons customers continue to work with Sri Radhai Industries.
+      </p>
 
       <div class="testimonial-slider">
         <div class="testimonial-track">
@@ -699,6 +681,27 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Lenis === "undefined") return;
+
+        const lenis = new Lenis({
+          duration: 1.05,
+          smoothWheel: true,
+          wheelMultiplier: 0.95,
+          touchMultiplier: 1.2,
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      });
+    </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.querySelector(".menu-toggle");
@@ -723,107 +726,63 @@
       });
     </script>
 
+    <!-- Stat Counter Animation -->
     <script>
-      (function () {
-        const slides = [
-          {
-            title: "<span>Precision</span> Engineering",
-            tagline:
-              "Reliable precision machining solutions for industrial components.",
-            image: "img/hero-slide/24994.jpg",
-            badgeNx:
-              'VMC Job Works<br><small>Tight Tolerances & Surface Finish</small><br><a href="services.html">Our Services</a>',
-            badgeSun: "PRECISION<br><small>±0.005 mm</small>",
-          },
-          {
-            title: "<span>CNC</span> Manufacturing",
-            tagline:
-              "Consistent CNC production support from prototype to repeat batches.",
-            image: "img/19480.jpg",
-            badgeNx:
-              'CNC Machining<br><small>Prototype to Production</small><br><a href="precision.html">View Capabilities</a>',
-            badgeSun: "QUALITY<br><small>ISO 9001:2015</small>",
-          },
-          {
-            title: "<span>Industrial</span> Solutions",
-            tagline:
-              "Custom manufacturing support aligned to drawings and delivery plans.",
-            image: "img/19820.jpg",
-            badgeNx:
-              'Custom Solutions<br><small>Reliable & Cost-Effective</small><br><a href="contact.html">Contact Us</a>',
-            badgeSun: "RELIABLE<br><small>On-Time Delivery</small>",
-          },
-        ];
+      document.addEventListener("DOMContentLoaded", function () {
+        const statNumbers = document.querySelectorAll(".stat-number");
+        let hasAnimated = false;
 
-        const heroContent = document.querySelector(".hero-content");
-        if (!heroContent) return;
+        function animateCounters() {
+          if (hasAnimated) return;
+          hasAnimated = true;
 
-        const titleEl = heroContent.querySelector(".hero-left h1");
-        const taglineEl = heroContent.querySelector(".tagline");
-        const heroImgEl = document.querySelector(".hero-image img");
-        const badgeNxEl = document.querySelector(".badge.nx");
-        const badgeSunEl = document.querySelector(".badge.sun");
+          statNumbers.forEach((element) => {
+            const target = parseInt(element.getAttribute("data-number"));
+            if (!target) return;
 
-        let index = 0;
-        const ANIM_DURATION = 600; // ms
-        const SLIDE_INTERVAL = 4000; // ms
+            let current = 0;
+            const increment = Math.ceil(target / 50);
+            const duration = 2000; // 2 seconds
 
-        function applySlide(i) {
-          if (titleEl) titleEl.innerHTML = slides[i].title;
-          if (taglineEl) taglineEl.textContent = slides[i].tagline;
-          if (heroImgEl) heroImgEl.src = slides[i].image;
-          if (badgeNxEl) badgeNxEl.innerHTML = slides[i].badgeNx;
-          if (badgeSunEl) badgeSunEl.innerHTML = slides[i].badgeSun;
+            const startTime = Date.now();
+
+            function updateCount() {
+              const elapsed = Date.now() - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+
+              current = Math.floor(target * progress);
+              element.textContent = current.toLocaleString();
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCount);
+              } else {
+                element.textContent = target.toLocaleString() + "+";
+              }
+            }
+
+            updateCount();
+          });
         }
 
-        // initialize first slide
-        applySlide(0);
-
-        setInterval(() => {
-          heroContent.classList.remove("anim-in");
-          heroContent.classList.add("anim-out");
-
-          // Change slide during fade-out for seamless transition
-          setTimeout(() => {
-            index = (index + 1) % slides.length;
-            applySlide(index);
-
-            heroContent.classList.remove("anim-out");
-            void heroContent.offsetWidth; // force reflow
-            heroContent.classList.add("anim-in");
-            // Keep anim-in class - don't remove it until next cycle
-          }, ANIM_DURATION / 2);
-        }, SLIDE_INTERVAL);
-      })();
-
-      // add 'nav-loaded' to body so desktop nav fade-in/stagger runs
-      document.addEventListener("DOMContentLoaded", function () {
-        // small delay for smoother effect
-        setTimeout(function () {
-          document.body.classList.add("nav-loaded");
-        }, 80);
-      });
-
-      // Fade-up animation for trusted section
-      document.addEventListener("DOMContentLoaded", function () {
-        const trustedSection = document.querySelector(".trusted");
-        if (!trustedSection) return;
-        trustedSection.style.opacity = 0;
-        trustedSection.style.transform = "translateY(32px)";
+        // Intersection Observer to trigger animation when stats are visible
         const observer = new IntersectionObserver(
-          function (entries) {
+          (entries) => {
             if (entries[0].isIntersecting) {
-              trustedSection.style.animation =
-                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
-              trustedSection.style.animationDelay = "0.2s";
+              animateCounters();
               observer.disconnect();
             }
           },
           { threshold: 0.3 },
         );
-        observer.observe(trustedSection);
-      });
 
+        const statContainer = document.querySelector(".hero-stats");
+        if (statContainer) {
+          observer.observe(statContainer);
+        }
+      });
+    </script>
+
+    <script>
       // Fade-up animation for hero2 section
       document.addEventListener("DOMContentLoaded", function () {
         const hero2Section = document.querySelector(".hero2");
@@ -862,6 +821,33 @@
           { threshold: 0.3 },
         );
         observer.observe(expertiseSection);
+      });
+
+      // Reveal animation for process capability cards
+      document.addEventListener("DOMContentLoaded", function () {
+        const capabilityCards = document.querySelectorAll(".capability-card");
+        if (!capabilityCards.length) return;
+        const cards = Array.from(capabilityCards);
+
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                const index = cards.indexOf(entry.target);
+                const revealDelay = Math.max(index, 0) * 2000;
+                setTimeout(function () {
+                  entry.target.classList.add("is-visible");
+                }, revealDelay);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.25, rootMargin: "0px 0px -40px 0px" },
+        );
+
+        capabilityCards.forEach(function (card) {
+          observer.observe(card);
+        });
       });
 
       // Fade-up animation for cnc-awareness-section
