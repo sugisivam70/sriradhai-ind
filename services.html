@@ -45,102 +45,379 @@
       }
 
       .service-hero {
-        background-image: url(img/2534.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 100px 30px;
-        position: relative;
-        overflow: hidden;
-        color: #fff;
-        text-align: left;
+        padding: 120px 24px 70px;
+        background:
+          radial-gradient(circle at 10% 20%, rgba(43, 108, 176, 0.13), transparent 36%),
+          radial-gradient(circle at 86% 14%, rgba(94, 170, 245, 0.16), transparent 40%),
+          #f6fafe;
+        color: #162534;
       }
 
       .service-hero-content {
-        max-width: 700px;
+        max-width: 1120px;
+        margin: 0 auto;
         position: relative;
         z-index: 2;
+        padding: 38px 36px;
+        border-radius: 26px;
+        border: 1px solid rgba(20, 52, 74, 0.1);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 18px 46px rgba(16, 34, 52, 0.08);
       }
 
       .service-hero-content h2 {
-        font-size: 36px;
-        font-weight: 300;
-        line-height: 1.4;
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.25;
+        margin: 0;
+        color: #162534;
       }
 
       .service-hero-content h2 span {
         font-weight: 700;
-        color: #ffffff;
+        color: #1e5f91;
       }
 
       .bg-text {
-        font-size: 100px;
+        margin: 10px 0 0;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
         font-weight: 700;
-        margin: 0;
-        line-height: 1;
-        bottom: 30px;
-        left: 30px;
-        color: #000000;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        color: #0f2534;
+      }
+
+      .service-hero-sub {
+        margin-top: 14px;
+        max-width: 700px;
+        color: #536271;
+        font-size: 1rem;
+        line-height: 1.75;
       }
 
       /* Service Section */
       .services {
-        padding: 20px 0;
-        background: #f9f9f9;
+        padding: 64px 20px 72px;
+        background: #ffffff;
         text-align: center;
         font-family: "Poppins", Arial, sans-serif;
       }
 
-      .section-title {
-        font-size: 42px;
-        margin-bottom: 40px;
+      .service-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 30px 24px;
+        border: 1px solid #e5ecf2;
+        border-radius: 24px;
+        background: #f9fbfd;
       }
 
-      .section-title span {
-        color: #007bff;
+      .service-eyebrow {
+        color: #2b6cb0;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 0.85rem;
+      }
+
+      .service-title {
+        font-size: clamp(1.8rem, 3vw, 2.7rem);
+        margin-bottom: 1.8rem;
+        color: #162534;
+        line-height: 1.2;
+      }
+
+      .service-title span {
+        color: #1e5f91;
       }
 
       .service-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
       }
 
       .service-box {
-        background: #f7f9fc;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-        flex: 1 1 280px;
-        transition: 0.3s;
-        cursor: pointer;
+        background: #ffffff;
+        padding: 22px 18px;
+        border-radius: 16px;
+        border: 1px solid #e5ecf2;
+        box-shadow: 0 8px 18px rgba(15, 32, 45, 0.04);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+        text-align: left;
       }
 
       .service-box i {
-        color: #007bff;
-        margin-bottom: 15px;
+        color: #2b6cb0;
+        margin-bottom: 12px;
       }
 
       .service-box h4 {
-        margin: 15px 0 10px;
+        margin: 0 0 8px;
+        color: #162534;
+        font-size: 1.02rem;
       }
       .service-box p {
-        font-size: 0.95rem;
-        color: #6f6f6f;
+        font-size: 0.9rem;
+        color: #5b6a79;
+        line-height: 1.7;
+        margin: 0;
       }
 
-      .service-box.active,
       .service-box:hover {
-        background: black;
-        color: #ffffff;
-      }
-      .service-box:hover p {
-        color: #bdbdbd;
+        transform: translateY(-4px);
+        border-color: #d7e3ef;
+        box-shadow: 0 14px 28px rgba(15, 32, 45, 0.08);
       }
 
-      .service-box.active i,
-      .service-box:hover i {
-        color: #007bff;
+      .service-box.active {
+        border-color: #bfd4e8;
+        background: #f4f8fc;
+      }
+
+      .service-box.active i {
+        color: #1e5f91;
+      }
+
+      .features-primary {
+        padding: 58px 20px 70px;
+        background: #ffffff;
+        text-align: center;
+      }
+
+      .feature-eyebrow {
+        color: #2b6cb0;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 0.85rem;
+      }
+
+      .feature-title {
+        font-size: clamp(1.8rem, 3vw, 2.7rem);
+        color: #162534;
+        line-height: 1.2;
+        margin-bottom: 1.8rem;
+      }
+
+      .feature-title span {
+        color: #1e5f91;
+      }
+
+      .features-primary .features-grid {
+        max-width: 1120px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .features-primary .feature-box {
+        background: #ffffff;
+        padding: 20px 16px;
+        border: 1px solid #e5ecf2;
+        border-radius: 16px;
+        text-align: left;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .features-primary .feature-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 26px rgba(15, 32, 45, 0.08);
+      }
+
+      .features-primary .feature-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: #f3f8fd;
+        color: #2b6cb0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      .features-primary .feature-box h3 {
+        color: #162534;
+        font-size: 0.97rem;
+        margin-bottom: 6px;
+      }
+
+      .features-primary .feature-box p {
+        color: #5b6a79;
+        font-size: 0.87rem;
+        line-height: 1.65;
+      }
+
+      .features-support {
+        padding: 56px 20px 62px;
+        background: #ffffff;
+      }
+
+      .features-support .features-header {
+        max-width: 1120px;
+        margin: 0 auto 1.4rem;
+        padding: 0 4px;
+      }
+
+      .features-support .feature-heading {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+        gap: 20px;
+        align-items: end;
+      }
+
+      .features-support .feature-heading h2 {
+        margin: 0;
+        color: #162534;
+        font-size: clamp(1.7rem, 2.8vw, 2.45rem);
+        line-height: 1.2;
+      }
+
+      .features-support .feature-heading p {
+        margin: 0;
+        color: #5b6a79;
+        font-size: 0.92rem;
+        line-height: 1.75;
+      }
+
+      .features-support .features-container {
+        max-width: 1120px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .features-support .feature-card {
+        background: #ffffff;
+        border: 1px solid #e5ecf2;
+        border-radius: 16px;
+        padding: 20px 16px;
+        text-align: left;
+        box-shadow: 0 8px 18px rgba(15, 32, 45, 0.04);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .features-support .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 28px rgba(15, 32, 45, 0.08);
+      }
+
+      .features-support .icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: #f3f8fd;
+        color: #2b6cb0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 0.96rem;
+      }
+
+      .features-support .feature-card h3 {
+        margin: 0 0 6px;
+        font-size: 0.97rem;
+        color: #162534;
+      }
+
+      .features-support .feature-card p {
+        margin: 0 0 0.8rem;
+        color: #5b6a79;
+        font-size: 0.88rem;
+        line-height: 1.65;
+      }
+
+      .features-support .feature-card a {
+        color: #1e5f91;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      .features-values {
+        padding: 54px 20px 74px;
+        background: #ffffff;
+      }
+
+      .features-values-inner {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      .features-values .values-header {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .features-values .feature-eyebrow {
+        margin-bottom: 0.75rem;
+      }
+
+      .features-values .feature-title {
+        margin: 0;
+        font-size: clamp(1.7rem, 2.7vw, 2.4rem);
+      }
+
+      .features-values .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .features-values .feature-box {
+        background: #ffffff;
+        border: 1px solid #e5ecf2;
+        border-radius: 16px;
+        padding: 20px 16px;
+        text-align: left;
+        box-shadow: 0 8px 18px rgba(15, 32, 45, 0.04);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .features-values .feature-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 28px rgba(15, 32, 45, 0.08);
+      }
+
+      .features-values .feature-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: #f3f8fd;
+        color: #2b6cb0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 0.96rem;
+      }
+
+      .features-values .feature-box h3 {
+        margin: 0 0 6px;
+        color: #162534;
+        font-size: 0.97rem;
+      }
+
+      .features-values .feature-box p {
+        margin: 0;
+        color: #5b6a79;
+        font-size: 0.88rem;
+        line-height: 1.65;
       }
 
       /* Expertise Section */
@@ -192,9 +469,37 @@
           letter-spacing: -0.06em;
         }
 
-        .service-box,
-        .expert-box {
-          flex: 1 1 100%;
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-container {
+          padding: 20px 14px;
+          border-radius: 18px;
+        }
+
+        .service-title {
+          font-size: 1.7rem;
+        }
+
+        .features-primary .features-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-title {
+          font-size: 1.7rem;
+        }
+
+        .features-support .feature-heading {
+          grid-template-columns: 1fr;
+        }
+
+        .features-support .features-container {
+          grid-template-columns: 1fr;
+        }
+
+        .features-values .features-grid {
+          grid-template-columns: 1fr;
         }
       }
 
@@ -242,85 +547,86 @@
 ================================ */
 
       .materials-section {
-        padding: 80px 20px;
+        padding: 56px 20px 72px;
         background: #ffffff;
       }
 
       .materials-container {
-        max-width: 1200px;
+        max-width: 1120px;
         margin: auto;
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 50px;
-        align-items: flex-start;
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+        gap: 28px;
+        align-items: start;
       }
 
-      /* ---------- Left Content ---------- */
+      .materials-content {
+        padding: 28px;
+        border: 1px solid #e5ecf2;
+        border-radius: 22px;
+        background: #ffffff;
+      }
 
       .materials-title {
-        display: flex;
-        align-items: center;
-        font-size: 30px;
-        font-weight: 700;
-        color: #111;
-        margin-bottom: 15px;
-        gap: 12px;
-      }
-
-      .materials-title .title-bar {
-        width: 6px;
-        height: 34px;
-        background: #6a1b9a;
-        display: inline-block;
+        font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+        font-weight: 600;
+        color: #162534;
+        margin-bottom: 12px;
+        line-height: 1.2;
       }
 
       .materials-intro {
-        font-size: 15px;
-        color: #555;
-        margin-bottom: 25px;
-        max-width: 560px;
+        font-size: 0.96rem;
+        color: #5b6a79;
+        margin-bottom: 22px;
+        line-height: 1.75;
+      }
+
+      .material-block {
+        padding: 14px 0;
+        border-top: 1px solid #ecf1f5;
       }
 
       .materials-content h4 {
-        margin-top: 22px;
+        margin-top: 0;
         margin-bottom: 8px;
-        font-size: 16px;
+        font-size: 0.98rem;
         font-weight: 600;
-        color: #222;
+        color: #1b2d3f;
+        letter-spacing: 0.02em;
       }
 
       .materials-content ul {
         padding-left: 18px;
-        margin-bottom: 12px;
+        margin-bottom: 0;
       }
 
       .materials-content ul li {
-        font-size: 14px;
-        color: #444;
-        margin-bottom: 6px;
-        line-height: 1.6;
+        font-size: 0.9rem;
+        color: #4f5e6c;
+        margin-bottom: 5px;
+        line-height: 1.65;
       }
 
       .materials-note {
-        margin-top: 18px;
-        font-size: 14px;
-        color: #555;
-        max-width: 580px;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #4f5e6c;
+        line-height: 1.7;
       }
-
-      /* ---------- Right Images ---------- */
 
       .materials-images {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 12px;
       }
 
       .materials-images img {
         width: 100%;
-        border-radius: 6px;
+        border-radius: 16px;
         object-fit: cover;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e5ecf2;
+        box-shadow: 0 8px 18px rgba(15, 32, 45, 0.08);
       }
 
       /* ===============================
@@ -338,20 +644,33 @@
       }
 
       @media (max-width: 600px) {
+        .service-hero {
+          padding: 96px 14px 48px;
+        }
+
+        .service-hero-content {
+          padding: 22px 18px;
+          border-radius: 18px;
+        }
+
+        .service-hero-sub {
+          font-size: 0.92rem;
+        }
+
         .materials-section {
-          padding: 60px 16px;
+          padding: 46px 14px 56px;
         }
 
         .materials-title {
-          font-size: 24px;
+          font-size: 1.35rem;
         }
 
         .materials-intro {
-          font-size: 14px;
+          font-size: 0.9rem;
         }
 
         .materials-content ul li {
-          font-size: 13.5px;
+          font-size: 0.86rem;
         }
 
         .materials-images {
@@ -397,16 +716,17 @@
       <div class="service-hero-content">
         <h2>Sri Radhai Industries <br /><span>Service Profile</span></h2>
         <h1 class="bg-text">Services</h1>
+        <p class="service-hero-sub">
+          Precision machining and manufacturing services designed for consistent
+          quality, practical execution, and dependable OEM supply.
+        </p>
       </div>
     </section>
     <section class="materials-section">
       <div class="materials-container">
         <!-- Left Content -->
         <div class="materials-content">
-          <h2 class="materials-title">
-            <span class="title-bar"></span>
-            SRI RADHAI INDUSTRIES - COMPANY PROFILE
-          </h2>
+          <h2 class="materials-title">Sri Radhai Industries - Company Profile</h2>
 
           <p class="materials-intro">
             Established in 2000, Sri Radhai Industries is a trusted manufacturer
@@ -414,43 +734,51 @@
             components serving agricultural equipment and truck OEMs.
           </p>
 
-          <h4>Core Strengths:</h4>
-          <ul>
-            <li>25+ skilled employees with strong production experience</li>
-            <li>Quality, reliability and innovation-driven execution</li>
-            <li>Timely supply for complex manufacturing requirements</li>
-            <li>Modern machinery and testing-oriented workflow</li>
-          </ul>
+          <div class="material-block">
+            <h4>Core Strengths:</h4>
+            <ul>
+              <li>25+ skilled employees with strong production experience</li>
+              <li>Quality, reliability and innovation-driven execution</li>
+              <li>Timely supply for complex manufacturing requirements</li>
+              <li>Modern machinery and testing-oriented workflow</li>
+            </ul>
+          </div>
 
-          <h4>Product Range:</h4>
-          <ul>
-            <li>Agricultural equipment parts</li>
-            <li>Truck components</li>
-            <li>Mechatronic assemblies</li>
-            <li>Electrical assemblies</li>
-          </ul>
+          <div class="material-block">
+            <h4>Product Range:</h4>
+            <ul>
+              <li>Agricultural equipment parts</li>
+              <li>Truck components</li>
+              <li>Mechatronic assemblies</li>
+              <li>Electrical assemblies</li>
+            </ul>
+          </div>
 
-          <h4>Major Customer Segments:</h4>
-          <ul>
-            <li>Zetra</li>
-            <li>VST Tillers Tractors Ltd</li>
-            <li>Monarch Tractor</li>
-            <li>Ashok Leyland</li>
-            <li>Simpson & Co Ltd</li>
-          </ul>
+          <div class="material-block">
+            <h4>Major Customer Segments:</h4>
+            <ul>
+              <li>Zetra</li>
+              <li>VST Tillers Tractors Ltd</li>
+              <li>Monarch Tractor</li>
+              <li>Ashok Leyland</li>
+              <li>Simpson & Co Ltd</li>
+            </ul>
+          </div>
 
-          <h4>Vision & Commitment:</h4>
-          <ul>
-            <li>
-              Expand capabilities in mechanical, mechatronic and electrical
-              manufacturing
-            </li>
-            <li>
-              Invest in state-of-the-art machinery and workforce development
-            </li>
-            <li>Maintain competitiveness against global OEM standards</li>
-            <li>Operate with integrity, innovation and technical excellence</li>
-          </ul>
+          <div class="material-block">
+            <h4>Vision & Commitment:</h4>
+            <ul>
+              <li>
+                Expand capabilities in mechanical, mechatronic and electrical
+                manufacturing
+              </li>
+              <li>
+                Invest in state-of-the-art machinery and workforce development
+              </li>
+              <li>Maintain competitiveness against global OEM standards</li>
+              <li>Operate with integrity, innovation and technical excellence</li>
+            </ul>
+          </div>
 
           <p class="materials-note">
             Sri Radhai Industries stands as a reliable OEM partner for
@@ -473,9 +801,9 @@
       </div>
     </section>
 
-    <section class="features-section" id="feature">
-      <p class="section-label">Industry Focus</p>
-      <h2 class="section-title">
+    <section class="features-section features-primary" id="feature">
+      <p class="feature-eyebrow">Industry Focus</p>
+      <h2 class="feature-title">
         Sri Radhai <span>Solutions</span> For
         <span>Core Industries</span>
       </h2>
@@ -549,7 +877,8 @@
     <!-- Service Offerings -->
     <section class="services">
       <div class="service-container">
-        <h2 class="section-title">Our <span>Service</span> Offering</h2>
+        <p class="service-eyebrow">Service Offerings</p>
+        <h2 class="service-title">Our <span>Service</span> Offering</h2>
 
         <div class="service-grid">
           <div class="service-box">
@@ -611,7 +940,7 @@
 
     <!-- Features Section -->
 
-    <section class="features-section">
+    <section class="features-section features-support">
       <div class="features-header">
         <div class="feature-heading">
           <div>
@@ -657,50 +986,60 @@
       </div>
     </section>
 
-    <section class="features-section">
-      <div class="features-grid">
-        <div class="feature-box">
-          <div class="feature-icon"><i class="fas fa-user-check"></i></div>
-          <h3>Integrity First</h3>
-          <p>Ethical work culture and transparent customer collaboration.</p>
+    <section class="features-section features-values">
+      <div class="features-values-inner">
+        <div class="values-header">
+          <p class="feature-eyebrow">Operational Values</p>
+          <h2 class="feature-title">
+            Principles that guide our <span>manufacturing delivery</span>
+          </h2>
         </div>
 
-        <div class="feature-box">
-          <div class="feature-icon"><i class="fas fa-award"></i></div>
-          <h3>Technical Excellence</h3>
-          <p>
-            Strong engineering discipline in part manufacturing and assembly.
-          </p>
-        </div>
-
-        <div class="feature-box">
-          <div class="feature-icon">
-            <i class="fas fa-cogs"></i>
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+            <h3>Integrity First</h3>
+            <p>Ethical work culture and transparent customer collaboration.</p>
           </div>
-          <h3>Modern Machine Setup</h3>
-          <p>
-            State-of-the-art machinery supporting consistent output quality.
-          </p>
-        </div>
 
-        <div class="feature-box">
-          <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
-          <h3>Workforce Development</h3>
-          <p>
-            Ongoing skill development for sustainable manufacturing capability.
-          </p>
-        </div>
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-award"></i></div>
+            <h3>Technical Excellence</h3>
+            <p>
+              Strong engineering discipline in part manufacturing and assembly.
+            </p>
+          </div>
 
-        <div class="feature-box">
-          <div class="feature-icon"><i class="fas fa-clock"></i></div>
-          <h3>Timely Supply</h3>
-          <p>Production and dispatch planning aligned to OEM schedules.</p>
-        </div>
+          <div class="feature-box">
+            <div class="feature-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Modern Machine Setup</h3>
+            <p>
+              State-of-the-art machinery supporting consistent output quality.
+            </p>
+          </div>
 
-        <div class="feature-box">
-          <div class="feature-icon"><i class="fas fa-globe"></i></div>
-          <h3>Global OEM Standards</h3>
-          <p>Component quality aligned with global customer expectations.</p>
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+            <h3>Workforce Development</h3>
+            <p>
+              Ongoing skill development for sustainable manufacturing
+              capability.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+            <h3>Timely Supply</h3>
+            <p>Production and dispatch planning aligned to OEM schedules.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-globe"></i></div>
+            <h3>Global OEM Standards</h3>
+            <p>Component quality aligned with global customer expectations.</p>
+          </div>
         </div>
       </div>
     </section>
