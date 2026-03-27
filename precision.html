@@ -8,562 +8,460 @@
 
     <link rel="stylesheet" href="style.css?v=2" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
     />
-  </head>
-  <style>
-    .service-hero-content h2 span.letter,
-    .service-hero-content h1 span.letter {
-      opacity: 0;
-      transform: translateY(-30px);
-      animation: fadeInUp 0.6s ease-out forwards;
-      display: inline-block;
-    }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(-30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .service-hero {
-      background-image: url(img/TaeApril20.jpg);
-      background-size: cover;
-      background-position: center;
-      padding: 100px 30px;
-      position: relative;
-      overflow: hidden;
-      color: #fff;
-      text-align: left;
-    }
-
-    .service-hero-content {
-      max-width: 700px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .service-hero-content h2 {
-      font-size: 36px;
-      font-weight: 300;
-      line-height: 1.4;
-    }
-
-    .service-hero-content h2 span {
-      font-weight: 700;
-      color: #00a2ff;
-    }
-
-    .bg-text {
-      font-size: 50px;
-      font-weight: 700;
-
-      margin: 0;
-      line-height: 1;
-      bottom: 30px;
-      left: 30px;
-      color: #021b5d;
-    }
-
-    /* Add this to your style block or style.css */
-
-    /* Fade-left animation for service-hero section */
-    @keyframes fadeLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .service-hero {
-      opacity: 0;
-      transform: translateX(-40px);
-      animation: none;
-    }
-
-    /* Fade-up animation for service section */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(32px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .services {
-      opacity: 0;
-      transform: translateY(32px);
-      animation: fadeUp 0.8s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
-      animation-delay: 1.8s;
-    }
-
-    /* Fade-up animation for service section */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(32px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .services {
-      opacity: 0;
-      transform: translateY(32px);
-      animation: fadeUp 0.8s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
-      animation-delay: 0.2s;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Poppins", sans-serif;
-    }
-
-    .precision-page {
-      padding: 60px 40px;
-      background: #f7f9fc;
-    }
-
-    .precision-container {
-      max-width: 1300px;
-      margin: auto;
-    }
-
-    .precision-title {
-      font-size: 28px;
-      font-weight: 600;
-      margin-bottom: 30px;
-      position: relative;
-    }
-
-    .precision-title::before {
-      content: "";
-      position: absolute;
-      left: -15px;
-      top: 0;
-      width: 5px;
-      height: 100%;
-      background: #6a1b9a;
-    }
-
-    .precision-layout {
-      display: grid;
-      grid-template-columns: 2.5fr 1fr;
-      gap: 30px;
-      align-items: start;
-    }
-
-    /* Table */
-    .precision-table table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-    }
-
-    .precision-table th,
-    .precision-table td {
-      border: 1px solid #ddd;
-      padding: 10px 12px;
-      font-size: 13px;
-    }
-
-    .precision-table th {
-      background: #f1f3f6;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    .precision-table td {
-      text-align: center;
-    }
-
-    .precision-table td:nth-child(2) {
-      text-align: left;
-    }
-
-    /* Image */
-    .precision-image {
-      background: #fff;
-      padding: 20px;
-      border: 1px solid #ddd;
-    }
-
-    .precision-image img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .precision-layout {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Mid-mobile optimization */
-    @media (max-width: 768px) {
-      .precision-page {
-        padding: 36px 18px;
+    <style>
+      :root {
+        --text-main: #162534;
+        --text-muted: #566779;
+        --accent: #1e5f91;
+        --accent-soft: #2b6cb0;
+        --surface: #ffffff;
+        --surface-soft: #f8fbfe;
+        --border: #e4edf5;
       }
 
-      .precision-title {
-        font-size: 22px;
+      body {
+        font-family: "Inter", "Poppins", sans-serif;
+        color: var(--text-main);
+        background: #ffffff;
       }
 
-      .precision-table table {
-        min-width: 520px;
-        font-size: 13px;
+      .service-hero {
+        padding: 118px 24px 64px;
+        background:
+          radial-gradient(circle at 12% 18%, rgba(43, 108, 176, 0.14), transparent 38%),
+          radial-gradient(circle at 86% 14%, rgba(94, 170, 245, 0.16), transparent 42%),
+          #f6fafe;
       }
 
-      .precision-table th,
-      .precision-table td {
-        padding: 8px 8px;
-        font-size: 12px;
-      }
-    }
-
-    /* Precision page mobile optimization (350px–400px) */
-    @media (max-width: 400px) {
-      .precision-page {
-        padding: 30px 15px;
+      .service-hero-content {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 38px 34px;
+        border-radius: 26px;
+        border: 1px solid rgba(20, 52, 74, 0.1);
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 18px 46px rgba(16, 34, 52, 0.08);
       }
 
-      .precision-title {
-        font-size: 20px;
-        margin-bottom: 20px;
+      .service-hero-content h2 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.22;
       }
 
-      .precision-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
+      .service-hero-content h2 span {
+        color: var(--accent);
+        font-weight: 700;
       }
 
-      /* Make table horizontally scrollable (BEST PRACTICE) */
-      .precision-table {
+      .bg-text {
+        margin: 10px 0 0;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        color: #0f2534;
+      }
+
+      .precision-intro {
+        margin-top: 14px;
+        max-width: 720px;
+        color: var(--text-muted);
+        font-size: 0.98rem;
+        line-height: 1.75;
+      }
+
+      .services,
+      .popular-details,
+      .work-section {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 56px 20px;
+      }
+
+      .services {
+        text-align: center;
+      }
+
+      .services h2,
+      .section-header h2 {
+        font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+        line-height: 1.2;
+        color: var(--text-main);
+      }
+
+      .services p,
+      .section-header p {
+        color: var(--text-muted);
+        line-height: 1.75;
+      }
+
+      .services > p {
+        max-width: 760px;
+        margin: 0.8rem auto 1.9rem;
+      }
+
+      .cards,
+      .details-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card,
+      .detail-card,
+      .upload-card {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface);
+        box-shadow: 0 8px 20px rgba(15, 32, 45, 0.05);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      .card {
+        padding: 16px;
+        text-align: left;
+      }
+
+      .card img {
         width: 100%;
-        overflow-x: auto;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 12px;
       }
 
-      .precision-table table {
-        min-width: 650px; /* ensures columns don’t squash */
-        font-size: 12px;
+      .card h3 {
+        margin: 0 0 0.45rem;
+        font-size: 1.06rem;
+        color: var(--text-main);
       }
 
-      .precision-table th,
-      .precision-table td {
-        padding: 8px 6px;
-        font-size: 11px;
-        white-space: nowrap;
+      .card p {
+        margin: 0 0 0.7rem;
+        font-size: 0.9rem;
       }
 
-      .precision-table th {
-        font-size: 11px;
+      .card a {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 0.86rem;
+        font-weight: 600;
       }
 
-      /* Right-side image */
-      .precision-image {
-        padding: 12px;
+      .popular-details {
+        padding-top: 12px;
       }
 
-      .precision-image img {
-        max-width: 100%;
+      .section-header {
+        text-align: center;
+        margin-bottom: 1.8rem;
+      }
+
+      .section-header .tag {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #eef5fc;
+        color: var(--accent-soft);
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .section-header h2 {
+        margin-top: 0.85rem;
+      }
+
+      .section-header h2 span {
+        color: var(--accent);
+      }
+
+      .details-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .detail-card {
+        padding: 16px;
+      }
+
+      .detail-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 12px;
+      }
+
+      .detail-card h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.02rem;
+      }
+
+      .detail-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .detail-card li {
+        margin-bottom: 6px;
+        color: var(--text-muted);
+        font-size: 0.88rem;
+        line-height: 1.6;
+      }
+
+      .upload-card {
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--surface-soft);
+      }
+
+      .upload-box h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.1rem;
+      }
+
+      .upload-box p {
+        margin: 0 0 0.95rem;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+
+      .upload-box .btn-primary {
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      .work-section {
+        padding-top: 12px;
+        padding-bottom: 72px;
+      }
+
+      .work-shell {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.35fr);
+        gap: 14px;
+      }
+
+      .work-overview {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
+        padding: 24px 20px;
+        box-shadow: 0 8px 20px rgba(15, 32, 45, 0.05);
+      }
+
+      .work-kicker {
+        display: inline-block;
+        margin-bottom: 0.7rem;
+        padding: 5px 10px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent-soft);
+        background: #eef5fc;
+        font-weight: 600;
+      }
+
+      .work-overview h2 {
+        margin: 0;
+        font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+        line-height: 1.2;
+        color: var(--text-main);
+      }
+
+      .work-overview h2 span {
+        color: var(--accent);
+      }
+
+      .work-overview p {
+        margin: 0.8rem 0 1.1rem;
+        color: var(--text-muted);
+        line-height: 1.75;
+        font-size: 0.93rem;
+      }
+
+      .work-points {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .work-points li {
+        position: relative;
+        padding-left: 16px;
+        margin-bottom: 8px;
+        color: var(--text-muted);
+        font-size: 0.88rem;
+        line-height: 1.6;
+      }
+
+      .work-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent-soft);
+      }
+
+      .work-points-cert {
+        margin-top: 10px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .work-showcase {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .work-articles {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 20px 72px;
+      }
+
+      .work-articles-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .work-tile {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(15, 32, 45, 0.05);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      .work-tile img {
+        width: 100%;
+        height: 170px;
+        object-fit: contain;
+        background: #f7fafc;
+      }
+
+      .work-tile.certificate-tile img {
         height: auto;
-      }
-    }
-    /* ===============================
-   MATERIALS WE WORK WITH
-================================ */
-
-    .materials-section {
-      padding: 80px 20px;
-      background: #ffffff;
-    }
-
-    .materials-container {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 50px;
-      align-items: flex-start;
-    }
-
-    /* ---------- Left Content ---------- */
-
-    .materials-title {
-      display: flex;
-      align-items: center;
-      font-size: 30px;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 15px;
-      gap: 12px;
-    }
-
-    .materials-title .title-bar {
-      width: 6px;
-      height: 34px;
-      background: #6a1b9a;
-      display: inline-block;
-    }
-
-    .materials-intro {
-      font-size: 15px;
-      color: #555;
-      margin-bottom: 25px;
-      max-width: 560px;
-    }
-
-    .materials-content h4 {
-      margin-top: 22px;
-      margin-bottom: 8px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #222;
-    }
-
-    .materials-content ul {
-      padding-left: 18px;
-      margin-bottom: 12px;
-    }
-
-    .materials-content ul li {
-      font-size: 14px;
-      color: #444;
-      margin-bottom: 6px;
-      line-height: 1.6;
-    }
-
-    .materials-note {
-      margin-top: 18px;
-      font-size: 14px;
-      color: #555;
-      max-width: 580px;
-    }
-
-    /* ---------- Right Images ---------- */
-
-    .materials-images {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .materials-images img {
-      width: 100%;
-      border-radius: 6px;
-      object-fit: cover;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    }
-
-    /* ===============================
-   RESPONSIVE
-================================ */
-
-    @media (max-width: 992px) {
-      .materials-container {
-        grid-template-columns: 1fr;
+        max-height: none;
+        object-fit: contain;
+        background: #ffffff;
+        padding: 6px;
+        display: block;
       }
 
-      .materials-images {
-        flex-direction: row;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .materials-section {
-        padding: 60px 16px;
+      .work-tile-body {
+        padding: 13px 13px 14px;
       }
 
-      .materials-title {
-        font-size: 24px;
+      .work-tile .tag {
+        display: inline-block;
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        background: #eef5fc;
+        color: var(--accent-soft);
+        padding: 4px 8px;
+        font-weight: 600;
       }
 
-      .materials-intro {
-        font-size: 14px;
+      .work-tile h3 {
+        margin: 8px 0 0;
+        color: var(--text-main);
+        font-size: 0.95rem;
+        line-height: 1.35;
       }
 
-      .materials-content ul li {
-        font-size: 13.5px;
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.55s ease,
+          transform 0.55s ease;
       }
 
-      .materials-images {
-        flex-direction: column;
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
       }
-    }
 
-    /* Explore Button */
-    .explore-btn {
-      display: inline-block;
-      background: #007bff;
-      color: #fff;
-      padding: 8px 18px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .explore-btn:hover {
-      background: #7e7e7e;
-    }
-
-    .work-section {
-      margin-top: 2rem;
-      padding-bottom: 60px;
-    }
-    .work-header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-
-    .work-header h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-
-    .work-header h2 span {
-      color: #3fa9f5;
-    }
-
-    .work-header p {
-      font-size: 1rem;
-      color: #525252;
-      margin-top: 10px;
-    }
-
-    /* Grid */
-    .work-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 250px;
-      gap: 20px;
-      padding: 20px 60px 60px;
-    }
-
-    /* Card */
-    .work-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 16px;
-    }
-
-    .work-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: 0.4s;
-    }
-
-    .work-card:hover img {
-      transform: scale(1.1);
-      filter: brightness(0.7);
-    }
-
-    /* Info */
-    .work-info {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      z-index: 2;
-    }
-
-    .work-info h3 {
-      font-size: 1.1rem;
-      margin: 5px 0 0;
-      color: #ffffff;
-    }
-    .tag {
-      color: #fff;
-    }
-
-    .tag {
-      font-size: 0.8rem;
-      background: rgba(0, 149, 255, 0.8);
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-weight: 600;
-    }
-
-    /* CTA button */
-    .cta-btn {
-      background: #0095ff;
-      border: none;
-      padding: 12px 20px;
-      color: #fff;
-      font-size: 0.9rem;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .cta-btn:hover {
-      background: #2a7fb6;
-    }
-
-    /* Special card sizing */
-    .large {
-      grid-row: span 2;
-    }
-
-    .wide {
-      grid-column: span 2;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .work-grid {
-        grid-template-columns: 1fr 1fr;
+      .card:hover,
+      .detail-card:hover,
+      .upload-card:hover,
+      .work-tile:hover {
+        transform: translateY(-4px);
+        border-color: #d8e4f0;
+        box-shadow: 0 14px 30px rgba(15, 32, 45, 0.1);
       }
-      .wide {
-        grid-column: span 1;
-      }
-    }
 
-    @media (max-width: 600px) {
-      .work-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
+      @media (max-width: 992px) {
+        .cards,
+        .details-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .work-shell {
+          grid-template-columns: 1fr;
+        }
       }
-      .large {
-        grid-row: span 1;
+
+      @media (max-width: 768px) {
+        .service-hero {
+          padding: 96px 14px 48px;
+        }
+
+        .service-hero-content {
+          padding: 24px 18px;
+          border-radius: 18px;
+        }
+
+        .services,
+        .popular-details,
+        .work-section {
+          padding: 42px 14px;
+        }
+
+        .cards,
+        .details-grid,
+        .work-showcase,
+        .work-articles-grid {
+          grid-template-columns: 1fr;
+        }
       }
-    }
-  </style>
+    </style>
+  </head>
+
   <body>
-    <!-- Navbar -->
     <header class="navbar">
       <div class="logo">
         <img
@@ -593,14 +491,19 @@
       </nav>
     </header>
 
-    <section class="service-hero" id="services">
+    <section class="service-hero reveal" id="services">
       <div class="service-hero-content">
         <h2>We provide <br /><span>Best Quality</span></h2>
         <h1 class="bg-text">Precision</h1>
+        <p class="precision-intro">
+          Precision machining capability for OEM components, with controlled
+          process quality, reliable delivery schedules, and drawing-based
+          execution.
+        </p>
       </div>
     </section>
 
-    <section class="services">
+    <section class="services reveal">
       <h2>Custom CNC Machining Solutions</h2>
       <p>
         From prototype components to production quantities, provides reliable
@@ -650,14 +553,13 @@
       </div>
     </section>
 
-    <section class="popular-details">
+    <section class="popular-details reveal">
       <div class="section-header">
         <span class="tag">Manufacturing</span>
         <h2>Sri Radhai <span>Industries</span> Component Profile</h2>
       </div>
 
       <div class="details-grid">
-        <!-- Card 1 -->
         <div class="detail-card">
           <img
             src="img/precision/automotive-parts-components.jpg"
@@ -674,7 +576,6 @@
           </ul>
         </div>
 
-        <!-- Card 2 -->
         <div class="detail-card">
           <img
             src="img/precision/cnc-machining-parts.png"
@@ -689,7 +590,6 @@
           </ul>
         </div>
 
-        <!-- Card 3 -->
         <div class="detail-card">
           <img
             src="img/precision/cnc-turned-components-1650968664-6309177.webp"
@@ -704,7 +604,6 @@
           </ul>
         </div>
 
-        <!-- Card 4 -->
         <div class="detail-card">
           <img src="img/precision/images (2).jpg" alt="Electrical Assemblies" />
           <h3>Electrical Assemblies</h3>
@@ -720,7 +619,6 @@
           </ul>
         </div>
 
-        <!-- Card 5 -->
         <div class="detail-card">
           <img
             src="img/precision/engineering-tools-blueprints.jpg"
@@ -735,7 +633,6 @@
           </ul>
         </div>
 
-        <!-- Info Card -->
         <div class="upload-card">
           <div class="upload-box">
             <h3>Sri Radhai Industries Support</h3>
@@ -748,92 +645,105 @@
         </div>
       </div>
     </section>
-    <section class="work-section">
-      <div class="work-header">
-        <h2>Shaping <span>Precision Through Expertise</span></h2>
-        <p>
-          At Sri Radhai Industries, we provide reliable milling, drilling, and
-          component-manufacturing solutions built on accuracy, consistency, and
-          strong engineering practices.
-        </p>
-      </div>
 
-      <div class="work-grid">
-        <!-- Card 1 -->
-        <div class="work-card">
+    <section class="work-section reveal">
+      <div class="work-shell">
+        <article class="work-overview">
+          <span class="work-kicker">Capability Snapshot</span>
+          <h2>Shaping <span>Precision Through Expertise</span></h2>
+          <p>
+            At Sri Radhai Industries, we provide reliable milling, drilling, and
+            component-manufacturing solutions built on accuracy, consistency,
+            and strong engineering practices.
+          </p>
+          <ul class="work-points">
+            <li>Structured machining flow from setup to final inspection.</li>
+            <li>Drawing-compliant execution with process repeatability.</li>
+            <li>Production-ready support for OEM and industrial programs.</li>
+            <li>Balanced focus on quality, delivery, and traceability.</li>
+            <li>Import and Export Certified Company.</li>
+            <li>Members of Visvesvaraya Certified Company.</li>
+          </ul>
+
+          <div class="work-points-cert">
+            <article class="work-tile certificate-tile">
+              <img
+                src="img/certification/WhatsApp Image 2026-03-04 at 12.28.03 PM.jpeg"
+                alt="Membership Certification"
+              />
+              <div class="work-tile-body">
+                <span class="tag">Membership</span>
+                <h3>Members of Visvesvaraya Certified Company</h3>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <div class="work-showcase">
+          <article class="work-tile certificate-tile">
+            <img
+              src="img/certification/WhatsApp Image 2026-03-04 at 12.28.03 PM (1).jpeg"
+              alt="Import Export Certification"
+            />
+            <div class="work-tile-body">
+              <span class="tag">Transportation</span>
+              <h3>Import and Export Certified Company</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-articles reveal">
+      <div class="work-articles-grid">
+        <article class="work-tile">
           <img
             src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_08ed03c7.jpg"
             alt="VMC Milling"
           />
-          <div class="work-info">
+          <div class="work-tile-body">
             <span class="tag">Milling</span>
             <h3>High-Precision Milling Operations</h3>
           </div>
-        </div>
+        </article>
 
-        <!-- Card 2 -->
-        <div class="work-card">
+        <article class="work-tile">
           <img
             src="img/abt/WhatsApp Image 2025-09-24 at 13.16.33_42b42982.jpg"
             alt="Machining"
           />
-          <div class="work-info">
+          <div class="work-tile-body">
             <span class="tag">Drilling</span>
             <h3>Accurate Drilling & Component Development</h3>
           </div>
-        </div>
+        </article>
 
-        <!-- Card 3 -->
-        <div class="work-card large">
-          <img
-            src="img/certification/WhatsApp Image 2026-03-04 at 12.28.03 PM (1).jpeg"
-            alt="Assembly Solutions"
-          />
-          <div class="work-info">
-            <span class="tag">Transportation</span>
-            <h3>Import and Export Certified company</h3>
-          </div>
-        </div>
-        <div class="work-card large">
-          <img
-            src="img/certification/WhatsApp Image 2026-03-04 at 12.28.03 PM.jpeg"
-            alt="Assembly Solutions"
-          />
-          <div class="work-info">
-            <span class="tag">Membership </span>
-            <h3>Members of visvesvaraya Certified company</h3>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="work-card">
+        <article class="work-tile">
           <img
             src="img/abt/metal-industry-workshop-precision-machinery-automated-production-line-robotic-arm-generated-by-ai-free-photo.jpg"
             alt="Quality Assurance"
           />
-          <div class="work-info">
+          <div class="work-tile-body">
             <span class="tag">Quality</span>
             <h3>Reliable Inspection & Quality Assurance</h3>
           </div>
-        </div>
+        </article>
 
-        <!-- Card 5 -->
-        <div class="work-card wide">
+        <article class="work-tile">
           <img
             src="img/abt/automotive-parts-manufacturing-canada-with-precision-engineering-processes_1291600-47172.jpg"
             alt="Manufacturing Innovation"
           />
-          <div class="work-info">
+          <div class="work-tile-body">
             <span class="tag">Innovation</span>
             <h3>Advancing Modern Manufacturing Practices</h3>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <footer class="footer">
       <div class="footer-container">
-        <!-- Left Column -->
         <div class="footer-brand">
           <img
             src="img/logo/logo-removebg-preview.png"
@@ -846,7 +756,6 @@
           </p>
         </div>
 
-        <!-- Quick Menu -->
         <div class="footer-links">
           <h4>Quick Menu</h4>
           <ul>
@@ -858,7 +767,6 @@
           </ul>
         </div>
 
-        <!-- Support -->
         <div class="footer-links">
           <h4>Support</h4>
           <ul>
@@ -869,7 +777,6 @@
           </ul>
         </div>
 
-        <!-- Social -->
         <div class="footer-social">
           <h4>Follow Us</h4>
           <div class="social-icons">
@@ -884,7 +791,6 @@
           </div>
         </div>
 
-        <!-- Contact -->
         <div class="footer-contact">
           <p>
             <a href="#">
@@ -950,270 +856,41 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Service Hero h2 animation
-        const serviceHeroH2 = document.querySelector(
-          ".service-hero-content h2",
-        );
-        if (serviceHeroH2) {
-          // Split text into spans if not already done
-          if (!serviceHeroH2.querySelector("span.letter")) {
-            const html = serviceHeroH2.innerHTML;
-            // Split by <br> and animate each line
-            serviceHeroH2.innerHTML = "";
-            html.split("<br>").forEach((line, lineIdx) => {
-              if (lineIdx > 0)
-                serviceHeroH2.appendChild(document.createElement("br"));
-              line
-                .replace(/<[^>]+>/g, "")
-                .split("")
-                .forEach((char, i) => {
-                  const span = document.createElement("span");
-                  span.className = "letter";
-                  span.textContent = char === " " ? "\u00A0" : char;
-                  serviceHeroH2.appendChild(span);
-                });
-            });
-          }
-          serviceHeroH2.querySelectorAll("span.letter").forEach((span) => {
-            span.style.opacity = 0;
-            span.style.transform = "translateY(-30px)";
-            span.style.animation = "none";
-          });
-          const observerH2 = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                serviceHeroH2
-                  .querySelectorAll("span.letter")
-                  .forEach((span, i) => {
-                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
-                    span.style.animationDelay = i * 0.06 + "s";
-                  });
-              }
-            },
-            { threshold: 0.5 },
-          );
-          observerH2.observe(serviceHeroH2);
-        }
-
-        // Service Hero h1 animation
-        const serviceHeroH1 = document.querySelector(
-          ".service-hero-content h1",
-        );
-        if (serviceHeroH1) {
-          if (!serviceHeroH1.querySelector("span.letter")) {
-            const text = serviceHeroH1.textContent;
-            serviceHeroH1.innerHTML = "";
-            text.split("").forEach((char) => {
-              const span = document.createElement("span");
-              span.className = "letter";
-              span.textContent = char === " " ? "\u00A0" : char;
-              serviceHeroH1.appendChild(span);
-            });
-          }
-          serviceHeroH1.querySelectorAll("span.letter").forEach((span) => {
-            span.style.opacity = 0;
-            span.style.transform = "translateY(-30px)";
-            span.style.animation = "none";
-          });
-          const observerH1 = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                serviceHeroH1
-                  .querySelectorAll("span.letter")
-                  .forEach((span, i) => {
-                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
-                    span.style.animationDelay = i * 0.06 + "s";
-                  });
-              }
-            },
-            { threshold: 0.5 },
-          );
-          observerH1.observe(serviceHeroH1);
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector(".nav-links");
-        menuToggle.addEventListener("click", function () {
-          navLinks.classList.toggle("active");
-        });
-      });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const servicesSection = document.querySelector(".services");
-        if (!servicesSection) return;
-        servicesSection.style.opacity = 0;
-        servicesSection.style.transform = "translateY(32px)";
-        const observer = new IntersectionObserver(
-          function (entries) {
-            if (entries[0].isIntersecting) {
-              servicesSection.style.animation =
-                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
-              servicesSection.style.animationDelay = "0.2s";
-              observer.disconnect();
-            }
-          },
-          { threshold: 0.3 },
-        );
-        observer.observe(servicesSection);
-      });
-
-      // Fade-left animation for service-hero section
-      document.addEventListener("DOMContentLoaded", function () {
-        const serviceHero = document.querySelector(".service-hero");
-        if (!serviceHero) return;
-        serviceHero.style.opacity = 0;
-        serviceHero.style.transform = "translateX(-40px)";
-        const observer = new IntersectionObserver(
-          function (entries) {
-            if (entries[0].isIntersecting) {
-              serviceHero.style.animation =
-                "fadeLeft 0.8s cubic-bezier(.2,.9,.2,1) forwards";
-              serviceHero.style.animationDelay = "0.2s";
-              observer.disconnect();
-            }
-          },
-          { threshold: 0.3 },
-        );
-        observer.observe(serviceHero);
-      });
-
-      // Fade-up animation for popular-details section
-      document.addEventListener("DOMContentLoaded", function () {
-        const popularDetails = document.querySelector(".popular-details");
-        if (!popularDetails) return;
-        popularDetails.style.opacity = 0;
-        popularDetails.style.transform = "translateY(32px)";
-        const observer = new IntersectionObserver(
-          function (entries) {
-            if (entries[0].isIntersecting) {
-              popularDetails.style.animation =
-                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
-              popularDetails.style.animationDelay = "0.2s";
-              observer.disconnect();
-            }
-          },
-          { threshold: 0.3 },
-        );
-        observer.observe(popularDetails);
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Service Hero h2 animation
-        const serviceHeroH2 = document.querySelector(
-          ".service-hero-content h2",
-        );
-        if (serviceHeroH2) {
-          // Split text into spans if not already done
-          if (!serviceHeroH2.querySelector("span.letter")) {
-            const html = serviceHeroH2.innerHTML;
-            // Split by <br> and animate each line
-            serviceHeroH2.innerHTML = "";
-            html.split("<br>").forEach((line, lineIdx) => {
-              if (lineIdx > 0)
-                serviceHeroH2.appendChild(document.createElement("br"));
-              line
-                .replace(/<[^>]+>/g, "")
-                .split("")
-                .forEach((char, i) => {
-                  const span = document.createElement("span");
-                  span.className = "letter";
-                  span.textContent = char === " " ? "\u00A0" : char;
-                  serviceHeroH2.appendChild(span);
-                });
-            });
-          }
-          serviceHeroH2.querySelectorAll("span.letter").forEach((span) => {
-            span.style.opacity = 0;
-            span.style.transform = "translateY(-30px)";
-            span.style.animation = "none";
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            navLinks.classList.toggle("active");
           });
-          const observerH2 = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                serviceHeroH2
-                  .querySelectorAll("span.letter")
-                  .forEach((span, i) => {
-                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
-                    span.style.animationDelay = i * 0.06 + "s";
-                  });
-              }
-            },
-            { threshold: 0.5 },
-          );
-          observerH2.observe(serviceHeroH2);
+
+          document.addEventListener("click", function (event) {
+            if (
+              !menuToggle.contains(event.target) &&
+              !navLinks.contains(event.target)
+            ) {
+              navLinks.classList.remove("active");
+            }
+          });
         }
 
-        // Service Hero h1 animation
-        const serviceHeroH1 = document.querySelector(
-          ".service-hero-content h1",
-        );
-        if (serviceHeroH1) {
-          if (!serviceHeroH1.querySelector("span.letter")) {
-            const text = serviceHeroH1.textContent;
-            serviceHeroH1.innerHTML = "";
-            text.split("").forEach((char) => {
-              const span = document.createElement("span");
-              span.className = "letter";
-              span.textContent = char === " " ? "\u00A0" : char;
-              serviceHeroH1.appendChild(span);
-            });
-          }
-          serviceHeroH1.querySelectorAll("span.letter").forEach((span) => {
-            span.style.opacity = 0;
-            span.style.transform = "translateY(-30px)";
-            span.style.animation = "none";
-          });
-          const observerH1 = new IntersectionObserver(
-            ([entry]) => {
+        const revealNodes = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+          function (entries, revealObserver) {
+            entries.forEach(function (entry) {
               if (entry.isIntersecting) {
-                serviceHeroH1
-                  .querySelectorAll("span.letter")
-                  .forEach((span, i) => {
-                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
-                    span.style.animationDelay = i * 0.06 + "s";
-                  });
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
               }
-            },
-            { threshold: 0.5 },
-          );
-          observerH1.observe(serviceHeroH1);
-        }
-      });
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
+        );
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
-        menuToggle.addEventListener("click", function () {
-          navLinks.classList.toggle("active");
-        });
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (window.__precisionMobileNavInit) return;
-        window.__precisionMobileNavInit = true;
-
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
-        if (!menuToggle || !navLinks) return;
-
-        menuToggle.addEventListener("click", function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-          navLinks.classList.toggle("active");
-        });
-
-        document.addEventListener("click", function (event) {
-          if (
-            !menuToggle.contains(event.target) &&
-            !navLinks.contains(event.target)
-          ) {
-            navLinks.classList.remove("active");
-          }
+        revealNodes.forEach(function (node) {
+          observer.observe(node);
         });
       });
     </script>
